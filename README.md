@@ -1,1 +1,3 @@
 # Neural-Style-Transfer
+
+This repository implements Neural Style Transfer based on Gatys et al. (2016), enabling the application of an artistic style from one image (e.g., Van Gogh or Picasso) to the content of another. Using a pretrained VGG network, the script extracts content and style features to compute content loss and style loss via Gram matrices. The output image is optimized to minimize this combined loss. There's also an optional fast-feedforward variant for real-time style transfer. Include your style and content images, run the optimizer (or feedforward model), and you’ll get artfully stylized results. Supports GPU acceleration and checkpointing for easy experimentation.
